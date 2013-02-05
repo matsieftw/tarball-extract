@@ -1,0 +1,17 @@
+{
+  "name": "tarball-extract",
+  "description": "A simple tarball download and extraction lib for node.",
+  "version": "0.0.1",
+  "author": "Joshua Heiks <joshuaheiks@gmail.com>",
+  "keywords": ["tar", "tarball"],
+  "main": "tarball.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/joshuah/sol-redis-pool.git"
+  },
+	"dependencies" : {
+    "tar" : "*",
+		"wget" : "*"
+  },
+  "engines": { "node": ">= 0.8.0" }
+}
