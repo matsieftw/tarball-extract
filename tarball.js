@@ -3,8 +3,8 @@ var fs = require('fs')
  , zlib = require('zlib')
  , wget = require('wget')
  
-function extractTarball(sourceFile, destination, callback) {
-  if( /(gz|tgz)$/i.test(sourceFile)) {
+function extractTarball(sourceFile, destination, callback, forceZip) {
+  if( /(gz|tgz)$/i.test(sourceFile) || forceZip) {
     // This file is gzipped, use zlib to deflate the stream before passing to tar.
     fs.createReadStream(sourceFile)
     .pipe(zlib.createGunzip())
