@@ -1,7 +1,7 @@
 var fs = require('fs')
  , tar = require('tar')
  , zlib = require('zlib')
- , wget = require('wget')
+ , wget = require('wget-improved')
  
 function extractTarball(sourceFile, destination, callback) {
   if( /(gz|tgz)$/i.test(sourceFile)) {
@@ -27,7 +27,7 @@ function extractTarballDownload(url, downloadFile, destination, options, callbac
     callback('error', {error: err})
   })
   download.on('end', function(output) {
-    extractTarball(output, destination, function(err, data){
+    extractTarball(downloadFile, destination, function(err, data){
       callback(null, {url: url, downloadFile: downloadFile, destination: destination})
     })
   })
