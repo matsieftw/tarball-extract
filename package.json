@@ -10,7 +10,7 @@
     "url": "git://github.com/joshuah/tarball-extract.git"
   },
   "dependencies" : {
-    "tar" : "*",
+    "tar" : "2.2.1",
     "wget" : "*"
   },
   "license": "MIT",
