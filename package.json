@@ -10,7 +10,7 @@
   "main": "tarball.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/joshuah/tarball-extract.git"
+    "url": "git://github.com/matsieftw/tarball-extract.git"
   },
   "dependencies": {
     "tar": "2.2.1",
