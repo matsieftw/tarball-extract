@@ -1,7 +1,7 @@
 {
   "name": "tarball-extract",
   "description": "A simple tarball download and extraction lib for node.",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "author": "Mattie Kenny <hi@matsie.net>",
   "keywords": [
     "tar",
@@ -12,9 +12,9 @@
     "type": "git",
     "url": "git://github.com/joshuah/tarball-extract.git"
   },
-  "dependencies" : {
-    "tar" : "2.2.1",
-    "wget" : "*"
+  "dependencies": {
+    "tar": "2.2.1",
+    "wget": "*"
   },
   "license": "MIT",
   "engines": {
