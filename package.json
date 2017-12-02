@@ -13,8 +13,8 @@
     "url": "git://github.com/matsieftw/tarball-extract.git"
   },
   "dependencies": {
-    "tar": "2.2.1",
-    "wget": "*"
+    "node-wget-promise": "^0.1.3",
+    "tar": "2.2.1"
   },
   "license": "MIT",
   "engines": {
