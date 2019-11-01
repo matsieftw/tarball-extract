@@ -1,5 +1,6 @@
-tarball-extract
-===============
+NOTICE: I will likely be archiving this package soon since I don't have time to maintain it and it's purpose has really been better implemented elsewhere.
+
+# tarball-extract
 
 A simple tarball download and extraction lib for node.
 
@@ -8,6 +9,7 @@ A simple tarball download and extraction lib for node.
     npm install tarball-extract
 
 ## method: extractTarball(sourceFile, destination, callback)
+
 Extracts a tar file using **node-tar**. If the file ends in a **.tgz** or a **tar.gz** gzip will be used to deflate it before passing the stream to tar.
 
     var tarball = require('tarball-extract')
@@ -16,7 +18,8 @@ Extracts a tar file using **node-tar**. If the file ends in a **.tgz** or a **ta
     })
 
 ## method: extractTarballDownload(url, downloadFile, destination, options, callback)
-Download a tarball from a **url** and automatically extract it. 
+
+Download a tarball from a **url** and automatically extract it.
 
     var tarball = require('tarball-extract')
     url = 'http://example.com/testfile.tar.gz'
@@ -29,4 +32,3 @@ When the download is complete the callback is passed (err, info).
     { url: 'http://example.com/testfile.tar.gz',
       downloadFile: '/tmp/testfile.tar.gz',
       destination: '/tmp/testfile' }
-
